@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Blocos</title>
+    <style>
+        body {
+            background-color: white; /* Fundo branco */
+            display: flex;
+            flex-wrap: wrap; /* Permite que os blocos se empilhem em várias linhas */
+            justify-content: center; /* Centraliza os blocos na tela */
+            padding: 20px; /* Espaçamento interno na tela */
+            margin: 0; /* Remove margens padrão */
+        }
+        .bloco {
+            width: 150px; /* Largura do bloco */
+            height: 150px; /* Altura do bloco */
+            background-color: gray; /* Cor de fundo cinza */
+            display: flex; /* Usar flexbox para centralizar texto */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            margin: 10px; /* Espaçamento entre os blocos */
+            color: white; /* Cor do texto */
+            font-weight: bold; /* Texto em negrito */
+            font-size: 16px; /* Tamanho da fonte */
+        }
+    </style>
+</head>
+<body>
+    <!-- Primeira linha -->
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    
+    <!-- Segunda linha -->
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+    <div class="bloco">150x150</div>
+</body>
+</html>

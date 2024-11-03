@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Exemplo</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background-color: gray;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .bolinhas {
+            display: flex;
+            gap: 10px;
+        }
+        .bolinha {
+            width: 20px;
+            height: 20px;
+            background-color: blue;
+            border-radius: 50%;
+        }
+        .cabecalho-secundario {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .container {
+            display: flex; 
+            flex: 1; /
+        }
+        .navegacao {
+            background-color: yellow;
+            width: 200px; 
+            padding: 10px;
+        }
+        .conteudo {
+            background-color: purple;
+            flex: 1; /
+            padding: 20px;
+            color: white;
+        }
+        footer {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="bolinhas">
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+            <div class="bolinha"></div>
+        </div>
+    </header>
+    <div class="cabecalho-secundario">
+        <h2>Cabeçalho</h2>
+    </div>
+    <div class="container">
+        <div class="navegacao">NAVEGAÇÃO</div>
+        <div class="conteudo">
+            <h3>CONTEÚDO</h3>
+           
+        </div>
+    </div>
+    <footer>
+        <p>Rodapé</p>
+    </footer>
+</body>
+</html>

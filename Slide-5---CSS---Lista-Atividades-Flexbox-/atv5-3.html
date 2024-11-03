@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com Fotos de Usuários</title>
+    <style>
+        body {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            display: flex;
+            flex-direction: column; /* Mudança para coluna */
+            align-items: center; /* Centraliza horizontalmente */
+            width: 300px;
+        }
+        .user {
+            display: flex;
+            align-items: center;
+            margin: 10px 0; /* Margem vertical entre perfis */
+            width: 100%; /* Ocupa a largura total do container */
+        }
+        .photo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .name {
+            font-weight: bold;
+        }
+        .phone {
+            color: gray;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <img class="photo" src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+            <div>
+                <div class="name">John Doe</div>
+                <div class="phone">(11) 98765-4321</div>
+            </div>
+        </div>
+        <div class="user">
+            <img class="photo" src="https://randomuser.me/api/portraits/women/1.jpg" alt="User 2">
+            <div>
+                <div class="name">Jane Smith</div>
+                <div class="phone">(21) 99876-5432</div>
+            </div>
+        </div>
+        <div class="user">
+            <img class="photo" src="https://randomuser.me/api/portraits/men/2.jpg" alt="User 3">
+            <div>
+                <div class="name">Robert Brown</div>
+                <div class="phone">(31) 91234-5678</div>
+            </div>
+        </div>
+        <div class="user">
+            <img class="photo" src="https://randomuser.me/api/portraits/women/2.jpg" alt="User 4">
+            <div>
+                <div class="name">Emily White</div>
+                <div class="phone">(41) 96543-2109</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
